@@ -1,0 +1,8 @@
+{
+  "name": "rn-boilerplate",
+  "version": "0.0.1",
+  "description": "React Native Boilerplate",
+  "repository": "https://github.com/sivantha96/rn-boilerplate.git",
+  "author": "Sivantha Paranavithana <sivantha.paranavithana@gmail.com>",
+  "license": "MIT"
+}
