@@ -1,6 +1,6 @@
 // all the font sizes are defined here
 
-import { horizontalScale } from '../helpers/scaling';
+import { horizontalScale } from '../helpers/scalingHelper';
 
 export const FontSizes = {
     xlDisplay: horizontalScale(48),
