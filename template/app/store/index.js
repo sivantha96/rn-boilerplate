@@ -2,7 +2,6 @@ import { createStore, compose, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { persistStore, persistCombineReducers } from 'redux-persist';
 import storage from '@react-native-async-storage/async-storage';
-
 import rootReducer from './reducers';
 import rootSagas from './sagas';
 
@@ -10,7 +9,7 @@ const persistConfig = {
     timeout: 50000,
     key: 'root',
     storage,
-    whitelist: [], // reducers to be persisted
+    whitelist: ['appReducer'], // reducers to be persisted
     debug: __DEV__,
     transforms: [], // to filter whitelisted reducers
 };
