@@ -14,5 +14,9 @@
     "boilerplate",
     "starter"
   ],
+  "files": [
+    "template",
+    "template.config.js"
+  ],
   "license": "MIT"
 }
