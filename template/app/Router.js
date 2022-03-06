@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
 import { handleAndroidBackButton } from './helpers/androidBackHandler';
+import HomeContainer from './features/Home/containers/HomeContainer';
 
 export class Router extends Component {
     componentDidMount() {
@@ -22,11 +22,7 @@ export class Router extends Component {
     onPressBackHandler = () => {};
 
     render() {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text>Hi</Text>
-            </View>
-        );
+        return <HomeContainer />;
     }
 }
 
