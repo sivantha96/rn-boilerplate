@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { handleAndroidBackButton } from './helpers/androidBackHandler';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import * as NavigationHelpers from './navigation/NavigationHelpers';
 
 export class Router extends Component {
     componentDidMount() {
@@ -17,17 +17,15 @@ export class Router extends Component {
     };
 
     // initial navigation logic
-    startNavigation = () => {};
+    startNavigation = () => {
+        NavigationHelpers.navigateToHome();
+    };
 
     // global android back handler
     onPressBackHandler = () => {};
 
     render() {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Icon name="rocket" size={30} color="#900" />
-            </View>
-        );
+        return <View />;
     }
 }
 
